@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Exam</title>
+</head>
+
+<body>
+    <div class="my-container container">
+        <div class="header bg-info p-2">
+            <input type="text" id="input" class="input" placeholder="Fruits or Legumes">
+            <div class="options">
+                <input class="form-check-input " type="radio" name="category" id="fruits" value="fruits">
+                <label for="fruits">Fruits</label>
+                <input class="form-check-input "  type="radio" name="category" id="legumes" value="legumes">
+                <label for="legumes">Legumes</label>
+            </div>
+            <div class="btns">
+                <button class="btn btn-primary" id="add-specific">Add a specific item</button>
+                <button class="btn btn-danger " id="add-general">Add a general item</button>
+            </div>
+        </div>
+        <div class="wrapper bg-primary">
+            <div class="wrapper-top">
+                <button id="search-item" class="btn btn-info">Search for item</button>
+                <button id="delete-item" class="btn btn-danger">Delete an item</button>
+                <input type="text" name="" id="search" placeholder="Search for Fruits or Legumes">
+            </div>
+            <hr>
+            <div class="wrapper-bottom">
+                <div class="fruit-container ">
+                    <h5>List of Fruits</h5>
+                    <div id="fruit-list" class="fruit-list">
+                        <p id="fruit-card" class="card alert alert-info text-success fs-5">Fruits! - Apple</p>
+                        <p id="fruit-card" class="card alert alert-info text-success fs-5">Fruits! - Mangoes</p>
+                    </div>
+                </div>
+                <div class="both-container ">
+                    <h5>List of Fruits and Legumes</h5>
+                    <div id="both-list" class="both-list">
+                        <p id="fruit-card"  class=" card alert alert-primary text-primary fs-5" onclick="filter(this)">Fruits! - Pineapples</p>
+                        <p id="fruit-card"  class=" card alert alert-primary text-primary fs-5" onclick="filter(this)">Fruits! - Bananas</p>
+                        <p id="legumes-card"  class=" card alert alert-primary text-primary fs-5" onclick="filter(this)">Legumes! - Potato</p>
+                        <p id="legumes-card"  class=" card alert alert-primary text-primary fs-5" onclick="filter(this)">Legumes! - Lentils</p>
+                    </div>
+                </div>
+                <div class="legumes-container ">
+                    <h5>List of Legumes</h5>
+                    <div id="legumes-list" class="legumes-list">
+                        <p id="legumes-card" class=" card alert alert-warning text-danger-emphasis fs-5">Legumes! - Broccoli</p>
+                        <p id="legumes-card" class=" card alert alert-warning text-danger-emphasis fs-5">Legumes! - Green Beans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

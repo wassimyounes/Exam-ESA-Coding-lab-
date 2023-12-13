@@ -1,0 +1,165 @@
+
+/* * {
+    border: 1px solid;
+} */
+.my-container {
+    padding: 20px 40px 40px;
+    width: 70%;
+    background-color: aquamarine;
+    margin: 20px auto;
+    box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.247);
+}
+
+.header {
+    box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.247);
+    height: 60px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.header:hover {
+    scale: 1.1;
+}
+
+.input {
+    margin-right: 10px;
+    width: 45%;
+    height: 40px;
+    border: none;
+    padding: 0 10px ;
+}
+
+.options {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.options input {
+    margin-left: 10px;
+    border: none;
+    margin-top: 7px;
+}
+
+.options label {
+    color: #fff;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+
+.btns {
+    width: 55%;
+    display: flex;
+    justify-content: end;
+    margin-left: 20%;
+}
+
+.btns button {
+    padding: auto 10px;
+    border: 0;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.wrapper {
+    border-radius: 2px;
+    margin: auto;
+    width: 95%;
+    margin-top: 30px;
+    box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.247);
+}
+
+.wrapper:hover{
+    scale: 1.05;
+}
+
+.wrapper-top {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-top button {
+    padding: auto 10px;
+    border: 0;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.wrapper-top input {
+    width: 35%;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: none;
+    padding: 0 10px ;
+}
+
+hr {
+    width: 96%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 255, 0.404);
+    box-shadow: 10px 6px 10px 5px rgba(0, 0, 0, 0.247);
+    margin-top: 0;
+}
+
+.wrapper-top input:focus {
+    width: 65%;
+}
+
+.wrapper-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.fruit-container, .both-container, .legumes-container {
+    width: 31%;
+
+}
+
+h5 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fruit-list, .both-list, .legumes-list {
+    border-radius: 5px;
+    box-shadow: 10px 6px 10px 5px rgba(0, 0, 0, 0.247);
+    border: 1px solid #fff;
+    padding: 15px;
+    background-color: rgba(25, 228, 25, 0.589);
+}
+
+.card:hover {
+    scale: 1.02;
+    box-shadow: 10px 6px 10px 5px rgba(0, 0, 0, 0.247);
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+}
+
+.found {
+    background-color: red;
+    color: white !important;
+}
+
+
+
+.warn {
+    animation: warn 0.5s ease;
+}
+
+@keyframes warn { 
+    0%{opacity: 1;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+    
+}
